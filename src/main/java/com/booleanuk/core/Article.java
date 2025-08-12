@@ -8,4 +8,9 @@ public class Article extends Paper{
         super(title);
         this.author = author;
     }
+
+    public Author getAuthor() {
+        return author;
+    }
+
 }

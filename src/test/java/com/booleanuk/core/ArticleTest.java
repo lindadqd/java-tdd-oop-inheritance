@@ -39,4 +39,12 @@ class ArticleTest {
 
         Assertions.assertEquals("item is not currently on loan", article.checkIn());
     }
+
+    @Test
+    public void getAuthorName(){
+        Author author = new Author("Bob","bob@bob.com","bob.com");
+        Paper article = new Article("JUnit Rocks",author);
+        Assertions.assertEquals("Bob", ((Article) article).getAuthor().getName());
+
+    }
 }
